@@ -1,12 +1,11 @@
 package org.bcndevcon.solid.fizzbuzz;
 
-public class Buzz implements FizzBuzzComponent {
+public class Buzz extends FizzBuzzAbstract {
 
 	public static final String BUZZ = "Buzz";
 
-	@Override
-	public String calculate(int number) {
-		return (number % 5  == 0)? Buzz.BUZZ : "";
+	public Buzz() {
+		super(BUZZ, 5);
 	}
 
 }
